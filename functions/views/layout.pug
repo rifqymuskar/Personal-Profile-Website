@@ -1,0 +1,48 @@
+html
+    head
+        title Rifqi Muskar
+
+
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+        link(href='/public/css/materialize.css' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Poppins:400,700,800,300')
+        link(href='/public/css/custom.css' rel='stylesheet')
+
+        script(src='/public/js/jquery-3.3.1.min.js')
+        script(src='/public/js/materialize.min.js')
+        script(src='/public/js/custom.js')
+
+    body
+
+        .navbar-fixed
+            nav
+                .container
+                    .nav-wrapper
+                        a(href="#").brand-logo.custom1
+                            img(src="/public/img/makassar-putih.png").responsive-img
+
+
+                        ul.right
+                            li
+                                a(href="#home") home
+                            li
+                                a(href="#about") about
+                            li
+                                a(href="#service") service
+                            li
+                                a(href="#project") projects
+                            li
+                                a(href="#education") education
+                            li
+                                a(href="#contact") contact
+    #loading
+        .preloader-wrapper.big.active
+            .spinner-layer.spinner-blue-only
+                .circle-clipper.left
+                    .circle
+                .gap-patch
+                    .circle
+                .circle-clipper.right
+                    .circle
+
+    block content
